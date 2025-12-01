@@ -146,10 +146,10 @@ const HomePage = ({ setCurrentPage }: { setCurrentPage: (page: string) => void; 
         <div className="grid md:grid-cols-3 gap-6">
           {[
             'photo-1492619375914-88005aa9e8fb',
-            'photo-1574267432644-f610bcf57b02',
+            'photo-1521737604893-d14cc237f11d',
             'photo-1579165466741-7f35e4755660'
           ].map((img, i) => (
-            <div key={i} className="group cursor-pointer relative overflow-hidden aspect-[2/3] rounded-2xl shadow-lg">
+            <div key={i} className="group cursor-pointer relative overflow-hidden aspect-2/3 rounded-2xl shadow-lg">
               <img 
                 src={`https://images.unsplash.com/${img}?w=600&q=80`}
                 alt={`Project ${i + 1}`}
@@ -270,7 +270,7 @@ const PortfolioPage = () => {
   
   const projects = [
     { id: 1, title: 'Brand Campaign 2024', year: '2024', category: 'Commercial', img: 'photo-1492619375914-88005aa9e8fb' },
-    { id: 2, title: 'Corporate Documentary', year: '2024', category: 'Documentary', img: 'photo-1574267432644-f610bcf57b02' },
+    { id: 2, title: 'Corporate Documentary', year: '2024', category: 'Documentary', img: 'photo-1521737604893-d14cc237f11d' },
     { id: 3, title: 'Music Video Series', year: '2023', category: 'Music', img: 'photo-1579165466741-7f35e4755660' },
     { id: 4, title: 'Digital Campaign', year: '2023', category: 'Digital', img: 'photo-1518676590629-3dcbd9c5a5c9' },
     { id: 5, title: 'Event Coverage', year: '2023', category: 'Events', img: 'photo-1540575467063-178a50c2df87' },
@@ -291,7 +291,7 @@ const PortfolioPage = () => {
             <div 
               key={project.id} 
               onClick={() => setSelectedProject(project)}
-              className="group cursor-pointer relative overflow-hidden aspect-[2/3] rounded-2xl shadow-lg hover:shadow-2xl transition-shadow"
+              className="group cursor-pointer relative overflow-hidden aspect-2/3 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow"
             >
               <img 
                 src={`https://images.unsplash.com/${project.img}?w=600&q=80`}
