@@ -64,6 +64,9 @@ const HomePage = () => {
                   WATCH OUR FILMS
                 </span>
               </Link>
+              <Link href="/la-musica-india" className="px-10 py-5 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold rounded-lg">
+                LA MUSICA INDIA
+              </Link>
               <Link href="/contact" className="px-10 py-5 border-2 border-cyan-500 text-cyan-500 font-bold rounded-lg">
                 START YOUR PROJECT
               </Link>
